@@ -10,5 +10,5 @@ Feature: Login Page
     Then User will Click on Login button
     
    Examples: 
-      | username  | password | 
-      | name1     |     5    |   
+      | username  | password      | 
+      | admin     | test07        |      
