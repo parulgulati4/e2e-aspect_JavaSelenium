@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="31.480701">
+<testcase classname="Login Page" name="Try to login with admin and lower level users checking the menu we receive." time="31.480701">
+<system-out><![CDATA[Given User should Open chrome browser.......................................passed
+When User will Open Application URL.........................................passed
+Then User will Enter UserName and Password  and click on login button.......passed
+Then Validate the DashBoard URL.............................................passed
+]]></system-out>
+</testcase>
+</testsuite>
