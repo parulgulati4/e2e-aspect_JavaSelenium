@@ -1,9 +1,9 @@
 [
   {
-    "line": 4,
+    "line": 2,
     "elements": [
       {
-        "line": 6,
+        "line": 7,
         "name": "Try to login with admin and lower level users checking the menu we receive.",
         "description": "",
         "id": "login-page;try-to-login-with-admin-and-lower-level-users-checking-the-menu-we-receive.",
@@ -12,50 +12,248 @@
         "steps": [
           {
             "result": {
-              "duration": 15279353800,
-              "status": "passed"
+              "status": "undefined"
             },
-            "line": 7,
-            "name": "User should Open chrome browser",
-            "match": {
-              "location": "Login.user_Lunch_Chrome_Brows()"
-            },
+            "line": 8,
+            "name": "User should Open chrome brows",
+            "match": {},
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 7440990600,
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 8,
+            "line": 9,
             "name": "User will Open Application URL",
             "match": {
-              "location": "Login.user_will_open_the_page()"
+              "location": "glue.user_will_open_the_page()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 4621029400,
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 9,
+            "line": 10,
             "name": "User will Enter UserName and Password  and click on login button",
             "match": {
-              "location": "Login.userWillEnterUserNameAndPasswordAndClickOnLoginButton()"
+              "location": "glue.userWillEnterUserNameAndPasswordAndClickOnLoginButton()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 4139326800,
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 10,
+            "line": 11,
             "name": "Validate the DashBoard URL",
             "match": {
-              "location": "Login.validateTheDashBoardURL()"
+              "location": "glue.validateTheDashBoardURL()"
             },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 14,
+        "name": "Verify Home page widgets and graphs",
+        "description": "",
+        "id": "login-page;verify-home-page-widgets-and-graphs",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 15,
+            "name": "User should Open chrome brows",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "User will Open Application URL",
+            "match": {
+              "location": "glue.user_will_open_the_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "User will Enter UserName and Password  and click on login button",
+            "match": {
+              "location": "glue.userWillEnterUserNameAndPasswordAndClickOnLoginButton()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 18,
+            "name": "User should be in home page",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 19,
+            "name": "verify widgets on Home page",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 20,
+            "name": "verify graphs on home page",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 23,
+        "name": "Verify Operational Data Dashboard widgets and charts",
+        "description": "",
+        "id": "login-page;verify-operational-data-dashboard-widgets-and-charts",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 24,
+            "name": "User should Open chrome brows",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 25,
+            "name": "User will Open Application URL",
+            "match": {
+              "location": "glue.user_will_open_the_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 26,
+            "name": "User will Enter UserName and Password  and click on login button",
+            "match": {
+              "location": "glue.userWillEnterUserNameAndPasswordAndClickOnLoginButton()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 27,
+            "name": "User should be in home page",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 28,
+            "name": "Navigate to Operantional data page",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 29,
+            "name": "verify charts on operational data page",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 31,
+        "name": "Verify Operational Data Dashboard widgets and charts",
+        "description": "",
+        "id": "login-page;verify-operational-data-dashboard-widgets-and-charts",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 32,
+            "name": "User should Open chrome brows",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 33,
+            "name": "User will Open Application URL",
+            "match": {
+              "location": "glue.user_will_open_the_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 34,
+            "name": "User will Enter UserName and Password  and click on login button",
+            "match": {
+              "location": "glue.userWillEnterUserNameAndPasswordAndClickOnLoginButton()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 35,
+            "name": "User should be in home page",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 36,
+            "name": "Navigate to Operantional data page",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 37,
+            "name": "verify charts on operational data page",
+            "match": {},
             "keyword": "Then "
           }
         ]
@@ -65,6 +263,12 @@
     "description": "",
     "id": "login-page",
     "keyword": "Feature",
-    "uri": "Login.feature"
+    "uri": "Login.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@Aspect_Regression_TestCases"
+      }
+    ]
   }
 ]
