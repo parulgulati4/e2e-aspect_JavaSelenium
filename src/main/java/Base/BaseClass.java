@@ -8,24 +8,5 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class BaseClass {
 
-//    public static WebDriver driver;
 
-//    @Before
-//    public  void Lunuch(){
-//
-//        WebDriverManager.chromedriver().setup();
-//        driver = new ChromeDriver();
-//
-//        driver.manage().window().maximize();
-//
-//        driver.manage().deleteAllCookies();
-//
-//    }
-//
-//    @After
-//    public void TearDown(){
-//
-//        driver.quit();
-//
-//    }
 }
