@@ -7,6 +7,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.remote.DesiredCapabilities;
 
 import Base.BaseClass;
 import Utilities.ReadConfig;
@@ -27,9 +29,12 @@ public class glue  {
 	public void userShouldOpenChromeBrows() throws Throwable {
 	    // Write code here that turns the phrase above into concrete actions
 		WebDriverManager.chromedriver().setup();
-	    driver = new ChromeDriver();
-	    driver.manage().window().maximize();
-	    driver.manage().deleteAllCookies(); 
+		
+		
+		ChromeOptions options = new ChromeOptions();
+		options.setHeadless(true);	
+		 driver = new ChromeDriver(options);
+	    
 	}
 		
 	@When("^User will Open Application URL$")
