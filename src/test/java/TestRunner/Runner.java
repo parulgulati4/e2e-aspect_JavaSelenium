@@ -19,7 +19,7 @@ import Utilities.JVMReport;
 		features = "src\\main\\resources\\Features",
 				//plugin = { "pretty", "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
 		
-				plugin = { "pretty", "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:" },
+				//plugin = { "pretty", "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:" },
 			
 		
 		glue ={"com.stepdefinitions"},
@@ -40,8 +40,7 @@ public class Runner {
 	@AfterClass
 	public static void generateCucumberReport()
 	{
-		CucumberReport cucumberReport = new CucumberReport();
-		cucumberReport.generateReport();
+		
 	} 
 
 }
