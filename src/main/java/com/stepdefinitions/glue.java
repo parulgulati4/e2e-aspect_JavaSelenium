@@ -25,17 +25,18 @@ public class glue  {
 	public  ReadConfig ReadConfig = new ReadConfig();
 
 	
-	@Given("^User should Open chrome brows$")
+	@Given("^User should Open chrome brower$")
 	public void userShouldOpenChromeBrows() throws Throwable {
 	    // Write code here that turns the phrase above into concrete actions
-		WebDriverManager.chromedriver().setup();
+			WebDriverManager.chromedriver().setup();
 		
 		
 		ChromeOptions options = new ChromeOptions();
 		options.setHeadless(true);	
 		 driver = new ChromeDriver(options);
-	    
 	}
+	
+	
 		
 	@When("^User will Open Application URL$")
 		public void user_will_open_the_page() throws Throwable {
@@ -147,21 +148,71 @@ public class glue  {
 	public void verifyChartsOnOperationalDataPage() throws Throwable {
 	    // Write code here that turns the phrase above into concrete actions
 		 List<WebElement> fieldin_operantional = driver.findElements(By.xpath("//span[@class='Widgets--Summary__Card__Title--main--x2qM5z0A']"));
-	 
-		 for (WebElement fieldtext : fieldin_operantional) {
-				
+		 for (WebElement fieldtext : fieldin_operantional) {	
 		    	String fieldtxt = fieldtext.getText();
 		    	System.out.println(fieldtxt);
-		    
-			}
+		    			}
+	}
+	
+	
+	@Then("^Navigate to Daily status tab$")
+	public void navigate_to_Daily_status_tab() throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+	  
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		driver.findElement(By.xpath("//button[text()='Daily Status']")).click();
+		
+		
 	}
 
-	
-	
+	@Then("^verify charts Daily status tab$")
+	public void verify_charts_Daily_status_tab() throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+	  
+		List<WebElement> findElements = driver.findElements(By.xpath("//span[@class='Title--title__label--_I0rRnGG']"));
+		for (WebElement webElement : findElements) {
+			String text = webElement.getText();
+			System.out.println(text);
+			Assert.assertTrue(true);
+		}
 		
+		List<WebElement> findElements2 = driver.findElements(By.xpath("//span[@class='MuiTypography-root MuiTypography-body1 DailyStatus--statuses__statuslabel--VKCA5elw MuiFormControlLabel-label css-ahj2mt-MuiTypography-root']"));
+		
+		for (WebElement webElement : findElements2) {
+			String text = webElement.getText();
+			
+			System.out.println(text);
+			
+			Assert.assertTrue(true);
+			
+		}
+	}
 	
+	
+	@Then("^Navigate to  Report Page chart$")
+	public void navigateToReportPageChart() throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+	  
+		driver.findElement(By.xpath("//abbr[text()='Reports']")).click();
+		
+		
+		
+	}
 
+	@Then("^verify all the reports on report pages$")
+	public void verifyAllTheReportsOnReportPages() throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+	  
 		
+		List<WebElement> findElements = driver.findElements(By.xpath("//h4[@class='MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom css-18k87ye-MuiTypography-root']"));
+		
+		for (WebElement webElement : findElements) {
+		String text = webElement.getText();	
+		
+			Assert.assertTrue(true);
+		}
+		
+	}
 
 
 	
