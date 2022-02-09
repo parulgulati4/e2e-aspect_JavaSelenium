@@ -17,10 +17,8 @@ import Utilities.JVMReport;
 		 monochrome=true,
 				
 		features = "src\\main\\resources\\Features",
-				//plugin = { "pretty", "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
 		
-				//plugin = { "pretty", "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:" },
-			
+				plugin={"pretty","json:src\\test\\resources\\Reports\\cucumber.json"},
 		
 		glue ={"com.stepdefinitions"},
 				
@@ -40,7 +38,7 @@ public class Runner {
 	@AfterClass
 	public static void generateCucumberReport()
 	{
-		
+		JVMReport.generateJVMreport(System.getProperty("user.dir")+"\\src\\test\\resources\\Reports\\cucumber.json");
 	} 
 
 }
