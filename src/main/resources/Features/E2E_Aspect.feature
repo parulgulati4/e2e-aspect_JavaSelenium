@@ -63,3 +63,21 @@ Feature: Login Page
     Then Navigate to  Browser page and select devices
     Then verify all the fields avaliable in device page
     Then Close the browser
+
+  @TC8
+  Scenario: Verify Browser  Page and select contacts check all the fields
+    Given User should Open chrome brower
+    When User will Open Application URL
+    Then User will Enter UserName and Password  and click on login button
+    Then Navigate to  Browser page and select contacts
+    Then verify all the fields avaliable in contacts page
+    Then Close the browser
+    
+    
+    
+    
+    
+    
+    
+    
+    

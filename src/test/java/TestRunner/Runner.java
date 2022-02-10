@@ -23,14 +23,13 @@ import Utilities.JVMReport;
 		features = "src\\main\\resources\\Features",
 		
 
-//		
-		//	plugin={"pretty","json:src\\test\\resources\\Reports\\cucumber.json"},
+	plugin={"pretty","json:src\\test\\resources\\Reports\\cucumber.json"},
 		
-				plugin = { "pretty", "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
+		
 				
 		snippets=SnippetType.CAMELCASE,
 		strict=true,
-						
+			
 		
 		  dryRun = false
 		 

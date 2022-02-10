@@ -66,7 +66,7 @@ public class glue  {
 	    // For automatic transformation, change DataTable to one of
 	    // List<YourType>, List<List<E>>, List<Map<K,V>> or Map<K,V>.
 	    // E,K,V must be a scalar (String, Integer, Date, enum etc)
-
+		 driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		 Thread.sleep(4000);
 		    String dashUrl = driver.getCurrentUrl();    
 		    System.out.println(dashUrl);
@@ -94,7 +94,7 @@ public class glue  {
 	@Then("^verify widgets on Home page$")
 	public void verifyWidgetsOnHomePage() throws Throwable {
 	    // Write code here that turns the phrase above into concrete actions
-	   
+		 driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	    
 	    String site = driver.findElement(By.xpath("//span[text()='Sites']")).getText();
 		 Assert.assertEquals(site, "Sites");
@@ -123,7 +123,7 @@ public class glue  {
 	public void navigateToOperantionalDataPage() throws Throwable {
 	    // Write code here that turns the phrase above into concrete actions
 	  
-	    
+		 driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	   
 	    driver.findElement(By.xpath("//abbr[text()='Operational Data']")).click();
 	    
@@ -147,6 +147,8 @@ public class glue  {
 	@Then("^verify charts on operational data page$")
 	public void verifyChartsOnOperationalDataPage() throws Throwable {
 	    // Write code here that turns the phrase above into concrete actions
+		 driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		
 		 List<WebElement> fieldin_operantional = driver.findElements(By.xpath("//span[@class='Widgets--Summary__Card__Title--main--x2qM5z0A']"));
 		 for (WebElement fieldtext : fieldin_operantional) {	
 		    	String fieldtxt = fieldtext.getText();
@@ -167,7 +169,9 @@ public class glue  {
 
 	@Then("^verify charts Daily status tab$")
 	public void verify_charts_Daily_status_tab() throws Throwable {
-	    // Write code here that turns the phrase above into concrete actions
+	    // Write code here that turns the phrase above into concrete actions.
+		
+		 driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	  
 		List<WebElement> findElements = driver.findElements(By.xpath("//span[@class='Title--title__label--_I0rRnGG']"));
 		for (WebElement webElement : findElements) {
@@ -217,6 +221,9 @@ public class glue  {
 	@Then("^verify all the reports having excel files are downloadable$")
 	public void verify_all_the_reports_having_excel_files_are_downloadable() throws Throwable {
 	    // Write code here that turns the phrase above into concrete actions
+		
+		
+		 driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 
 		List<WebElement> reportfiles = driver.findElements(By.xpath("//button[@class='MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall MuiButtonBase-root css-1wkbrw0-MuiButtonBase-root-MuiButton-root']"));
 		
@@ -243,6 +250,8 @@ public class glue  {
 	@Then("^verify all the fields avaliable in device page$")
 	public void verifyAllTheFieldsAvaliableInDevicePage() throws Throwable {
 	    // Write code here that turns the phrase above into concrete actions
+		
+		 driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	    
 		List<WebElement> allfields = driver.findElements(By.xpath("//span[@class='MuiButtonBase-root MuiTableSortLabel-root css-1qgma8u-MuiButtonBase-root-MuiTableSortLabel-root']"));
 		
@@ -254,6 +263,38 @@ public class glue  {
 		}
 	}
 
+	@Then("^Navigate to  Browser page and select contacts$")
+	public void navigateToBrowserPageAndSelectcontacts() throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+		
+		 driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+	
+		driver.findElement(By.xpath("//abbr[text()='Browse']")).click();
+		
+		driver.findElement(By.xpath("//div[@class='jss163 MuiSelect-select MuiSelect-standard MuiInput-input MuiInputBase-input css-1fi5yo0-MuiSelect-select-MuiInputBase-input-MuiInput-input']")).click();
+		
+		driver.findElement(By.xpath("//li[text()='Contacts']")).click();
+		
+		
+		
+		
+	}
+
+	@Then("^verify all the fields avaliable in contacts page$")
+	public void verifyAllTheFieldsAvaliableIncontactsPage() throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+		
+		 driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+	    
+		List<WebElement> allfields = driver.findElements(By.xpath("//span[@class='MuiButtonBase-root MuiTableSortLabel-root css-1qgma8u-MuiButtonBase-root-MuiTableSortLabel-root']"));
+		
+		for (WebElement webElement : allfields) {
+			
+			String text = webElement.getText();
+			System.out.println(text);
+			Assert.assertTrue(true);
+		}
+	}
 
 
 	
