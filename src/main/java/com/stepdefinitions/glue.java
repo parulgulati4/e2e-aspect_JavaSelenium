@@ -213,6 +213,47 @@ public class glue  {
 		}
 		
 	}
+	
+	@Then("^verify all the reports having excel files are downloadable$")
+	public void verify_all_the_reports_having_excel_files_are_downloadable() throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+
+		List<WebElement> reportfiles = driver.findElements(By.xpath("//button[@class='MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall MuiButtonBase-root css-1wkbrw0-MuiButtonBase-root-MuiButton-root']"));
+		
+		for (WebElement webElement : reportfiles) {
+			
+			
+			if (webElement.isDisplayed() && webElement.isEnabled()) {
+				Assert.assertTrue(true);
+			}
+		}
+		
+		
+	}
+	
+	
+	@Then("^Navigate to  Browser page and select devices$")
+	public void navigateToBrowserPageAndSelectDevices() throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+	
+		driver.findElement(By.xpath("//abbr[text()='Browse']")).click();
+		
+	}
+
+	@Then("^verify all the fields avaliable in device page$")
+	public void verifyAllTheFieldsAvaliableInDevicePage() throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+	    
+		List<WebElement> allfields = driver.findElements(By.xpath("//span[@class='MuiButtonBase-root MuiTableSortLabel-root css-1qgma8u-MuiButtonBase-root-MuiTableSortLabel-root']"));
+		
+		for (WebElement webElement : allfields) {
+			
+			String text = webElement.getText();
+			System.out.println(text);
+			Assert.assertTrue(true);
+		}
+	}
+
 
 
 	

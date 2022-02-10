@@ -3,145 +3,19 @@
     "line": 1,
     "elements": [
       {
-        "comments": [
-          {
-            "line": 3,
-            "value": "#Scenario: Try to login with admin and lower level users checking the menu we receive."
-          },
-          {
-            "line": 4,
-            "value": "#Given User should Open chrome brower"
-          },
-          {
-            "line": 5,
-            "value": "#When User will Open Application URL"
-          },
-          {
-            "line": 6,
-            "value": "#Then User will Enter UserName and Password  and click on login button"
-          },
-          {
-            "line": 7,
-            "value": "#Then Validate the DashBoard URL"
-          },
-          {
-            "line": 8,
-            "value": "#Then Close the browser"
-          },
-          {
-            "line": 9,
-            "value": "#"
-          },
-          {
-            "line": 10,
-            "value": "#Scenario: Verify Home page widgets and graphs"
-          },
-          {
-            "line": 11,
-            "value": "#Given User should Open chrome brower"
-          },
-          {
-            "line": 12,
-            "value": "#When User will Open Application URL"
-          },
-          {
-            "line": 13,
-            "value": "#Then User will Enter UserName and Password  and click on login button"
-          },
-          {
-            "line": 14,
-            "value": "#Then verify widgets on Home page"
-          },
-          {
-            "line": 15,
-            "value": "#Then verify graphs on home page"
-          },
-          {
-            "line": 16,
-            "value": "#Then Close the browser"
-          },
-          {
-            "line": 17,
-            "value": "#"
-          },
-          {
-            "line": 18,
-            "value": "#Scenario: Verify Operational Data Dashboard widgets and charts"
-          },
-          {
-            "line": 19,
-            "value": "#Given User should Open chrome brower"
-          },
-          {
-            "line": 20,
-            "value": "#When User will Open Application URL"
-          },
-          {
-            "line": 21,
-            "value": "#Then User will Enter UserName and Password  and click on login button"
-          },
-          {
-            "line": 22,
-            "value": "#Then Navigate to Operantional data page"
-          },
-          {
-            "line": 23,
-            "value": "#Then verify charts on operational data page"
-          },
-          {
-            "line": 24,
-            "value": "#Then Close the browser"
-          },
-          {
-            "line": 25,
-            "value": "#"
-          },
-          {
-            "line": 26,
-            "value": "#Scenario: Verify Operational Daily status widgets and charts"
-          },
-          {
-            "line": 27,
-            "value": "#Given User should Open chrome brower"
-          },
-          {
-            "line": 28,
-            "value": "#When User will Open Application URL"
-          },
-          {
-            "line": 29,
-            "value": "#Then User will Enter UserName and Password  and click on login button"
-          },
-          {
-            "line": 30,
-            "value": "#Then Navigate to Operantional data page"
-          },
-          {
-            "line": 31,
-            "value": "#Then Navigate to Daily status tab"
-          },
-          {
-            "line": 32,
-            "value": "#Then verify charts Daily status tab"
-          },
-          {
-            "line": 33,
-            "value": "#Then Close the browser"
-          }
-        ],
-        "line": 36,
-        "name": "Verify Report Page chart",
+        "line": 59,
+        "name": "Verify Browser  Page and select devices check all the fields",
         "description": "",
-        "id": "login-page;verify-report-page-chart",
+        "id": "login-page;verify-browser--page-and-select-devices-check-all-the-fields",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 27087316500,
+              "duration": 16907252300,
               "status": "passed"
             },
-            "line": 37,
+            "line": 60,
             "name": "User should Open chrome brower",
             "match": {
               "location": "glue.userShouldOpenChromeBrows()"
@@ -150,10 +24,10 @@
           },
           {
             "result": {
-              "duration": 14492706900,
+              "duration": 8771759800,
               "status": "passed"
             },
-            "line": 38,
+            "line": 61,
             "name": "User will Open Application URL",
             "match": {
               "location": "glue.user_will_open_the_page()"
@@ -162,10 +36,10 @@
           },
           {
             "result": {
-              "duration": 8600198800,
+              "duration": 8865897700,
               "status": "passed"
             },
-            "line": 39,
+            "line": 62,
             "name": "User will Enter UserName and Password  and click on login button",
             "match": {
               "location": "glue.userWillEnterUserNameAndPasswordAndClickOnLoginButton()"
@@ -176,8 +50,8 @@
             "result": {
               "status": "undefined"
             },
-            "line": 40,
-            "name": "Navigate to  Report Page chart",
+            "line": 63,
+            "name": "Navigate to  Browser page and select devices",
             "match": {},
             "keyword": "Then "
           },
@@ -185,8 +59,8 @@
             "result": {
               "status": "undefined"
             },
-            "line": 41,
-            "name": "verify all the reports on report pages",
+            "line": 64,
+            "name": "verify all the fields avaliable in device page",
             "match": {},
             "keyword": "Then "
           },
@@ -194,12 +68,18 @@
             "result": {
               "status": "skipped"
             },
-            "line": 42,
+            "line": 65,
             "name": "Close the browser",
             "match": {
               "location": "glue.Close_the_browser()"
             },
             "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 58,
+            "name": "@TC7"
           }
         ]
       }
@@ -208,6 +88,6 @@
     "description": "",
     "id": "login-page",
     "keyword": "Feature",
-    "uri": "Login.feature"
+    "uri": "E2E_Aspect.feature"
   }
 ]
