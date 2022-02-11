@@ -9,7 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="E2e-aspect" />
         <module name="e2e-aspect_JavaSelenium" />
-        <module name="BDDFramework" />
+        <module name="AspectAutomationTesting" />
       </profile>
     </annotationProcessing>
   </component>

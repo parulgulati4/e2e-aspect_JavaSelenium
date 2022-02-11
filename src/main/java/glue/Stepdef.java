@@ -3,15 +3,16 @@ package glue;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.When;
+import io.cucumber.java.en.Then;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
-import cucumber.api.java.en.Given;
-import cucumber.api.java.en.Then;
-import cucumber.api.java.en.When;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 import junit.framework.Assert;
 
@@ -26,6 +27,9 @@ public class Stepdef {
 	@Given("^User should Open chrome brower$")
 	public void userShouldOpenChromeBrows() throws Throwable {
 	    // Write code here that turns the phrase above into concrete actions
+
+
+
 			WebDriverManager.chromedriver().setup();
 		
 		

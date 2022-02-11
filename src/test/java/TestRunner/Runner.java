@@ -1,13 +1,12 @@
 package TestRunner;
 
 
-import cucumber.api.CucumberOptions;
-import cucumber.api.SnippetType;
-import cucumber.api.junit.Cucumber;
+
 
 import java.io.FileOutputStream;
 import java.util.Properties;
-
+import io.cucumber.junit.Cucumber;
+import io.cucumber.junit.CucumberOptions;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.runner.RunWith;
@@ -25,16 +24,19 @@ import Utilities.JVMReport;
 
 //	plugin={"pretty","json:src\\test\\resources\\Reports\\cucumber.json"},
 		
-				plugin = { "pretty", "html:target/site/cucumber-pretty","json:target/cucumber.json", "rerun:target/rerun.txt" },
+				//plugin = { "pretty", "html:target/site/cucumber-pretty","json:target/cucumber.json", "rerun:target/rerun.txt" },
+			//	plugin = { "pretty, html:target/site/cucumber-pretty, json:target/cucumber.json, rerun:target/rerun.txt" },
+
+		plugin = {"pretty", "html:target/cucumber-pretty", "json:target/report/cucumber.json","rerun:target/rerun.txt", "junit:target/report/cucumber.xml"},
 
 					//	glue = {"src\\main\\java\\glue"},
 
-		glue = { "classpath:BBDFramework.glue"},
+		glue = { "classpath:glue"},
 
-		snippets=SnippetType.CAMELCASE,
+		snippets= CucumberOptions.SnippetType.CAMELCASE,
 		strict=true,
-			
-		
+
+		tags = "@AspectFunctionality",
 		  dryRun = false
 		 
 )
