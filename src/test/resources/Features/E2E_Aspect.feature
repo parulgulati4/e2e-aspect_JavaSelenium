@@ -1,7 +1,7 @@
 
 
 @AspectFunctionality
-Feature: Login Page
+Feature: Aspect Test Functionalities
 
   @TC1
   Scenario:Try to login with admin and lower level users checking the menu we receive.
@@ -76,39 +76,69 @@ Feature: Login Page
     Then verify all the fields avaliable in contacts page
     Then Close the browser
 
-#  @TC9
-#  Scenario:Verify Browser  Page and select sites check all the fields
-#    Given User should Open chrome brower
-#    When User will Open Application URL
-#    Then User will Enter UserName and Password  and click on login button
-#    Then Navigate to  Browser page and select sites
-#    Then verify all the fields avaliable in sites page
-#    Then Close the browser
-#
-#  @TC10
-#  Scenario:Verify Browser  Page and select supply check all the fields
-#    Given User should Open chrome brower
-#    When User will Open Application URL
-#    Then User will Enter UserName and Password  and click on login button
-#    Then Navigate to  Browser page and select Supply
-#    Then verify all the fields avaliable in supply page
-#    Then Close the browser
-#
-#
-#  @TC11
-#  Scenario:Verify Browser  Page and select Routers check all the fields
-#    Given User should Open chrome brower
-#    When User will Open Application URL
-#    Then User will Enter UserName and Password  and click on login button
-#    Then Navigate to  Browser page and select Routers
-#    Then verify all the fields avaliable in supply Routers
-#    Then Close the browser
-#
-#  @TC12
-#  Scenario:Verify Browser  Page and select Reporters check all the fields
-#    Given User should Open chrome brower
-#    When User will Open Application URL
-#    Then User will Enter UserName and Password  and click on login button
-#    Then Navigate to  Browser page and select Reporters
-#    Then verify all the fields avaliable in supply Reporters
-#    Then Close the browser
+  @TC9
+  Scenario:Verify Browser  Page and select sites check all the fields
+    Given User should Open chrome brower
+    When User will Open Application URL
+    Then User will Enter UserName and Password  and click on login button
+    Then Navigate to  Browser page and select Sites
+    Then verify all the fields avaliable in Sites page
+    Then Close the browser
+
+  @TC10
+  Scenario:Verify Browser  Page and select supply check all the fields
+    Given User should Open chrome brower
+    When User will Open Application URL
+    Then User will Enter UserName and Password  and click on login button
+    Then Navigate to  Browser page and select Supplies
+    Then verify all the fields avaliable in Supplies page
+    Then Close the browser
+
+
+  @TC11
+  Scenario:Verify Browser  Page and select Routers check all the fields
+    Given User should Open chrome brower
+    When User will Open Application URL
+    Then User will Enter UserName and Password  and click on login button
+    Then Navigate to  Browser page and select Routers
+    Then verify all the fields avaliable in Routers page
+    Then Close the browser
+
+  @TC12
+  Scenario:Verify Browser  Page and select Reporters check all the fields
+    Given User should Open chrome brower
+    When User will Open Application URL
+    Then User will Enter UserName and Password  and click on login button
+    Then Navigate to  Browser page and select Reporters
+    Then verify all the fields avaliable in Reporters page
+    Then Close the browser
+
+
+  @TC13
+  Scenario:Verify Browser  Page and select Results check all the fields
+    Given User should Open chrome brower
+    When User will Open Application URL
+    Then User will Enter UserName and Password  and click on login button
+    Then Navigate to  Browser page and select Results
+    Then verify all the fields avaliable in Results page
+    Then Close the browser
+
+
+  @TC14
+  Scenario:Verify Browser  Page and select Notifications check all the fields
+    Given User should Open chrome brower
+    When User will Open Application URL
+    Then User will Enter UserName and Password  and click on login button
+    Then Navigate to  Browser page and select Notifications
+    Then verify all the fields avaliable in Notifications page
+    Then Close the browser
+
+  @TC15
+  Scenario:Verify Browser  Page and select Device API Keys check all the fields
+    Given User should Open chrome brower
+    When User will Open Application URL
+    Then User will Enter UserName and Password  and click on login button
+    Then Navigate to  Browser page and select Device API Keys
+    Then verify all the fields avaliable in Device API Keys page
+    Then Close the browser
+
