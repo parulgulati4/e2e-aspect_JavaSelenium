@@ -1,44 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <extentreports>
-    <configuration>
-        <!-- report theme -->
-        <!-- standard, dark -->
-        <theme>standard</theme>
+<configuration>
+<!-- report theme -->
 
-        <!-- document encoding -->
-        <!-- defaults to UTF-8 -->
-        <encoding>UTF-8</encoding>
+<!-- standard, dark -->
 
-        <!-- enable or disable timeline on dashboard -->
-        <enableTimeline>true</enableTimeline>
+<theme>standard</theme>
+<!-- document encoding -->
 
-        <!-- protocol for script and stylesheets -->
-        <!-- defaults to https -->
-        <protocol>https</protocol>
+<!-- defaults to UTF-8 -->
 
-        <!-- title of the document -->
-        <documentTitle>Extent Framework</documentTitle>
+<encoding>UTF-8</encoding>
+<!-- protocol for script and stylesheets -->
 
-        <!-- report name - displayed at top-nav -->
-        <reportName>Build 1</reportName>
+<!-- defaults to https -->
 
-        <!-- timestamp format -->
-        <timeStampFormat>MMM dd, yyyy HH:mm:ss</timeStampFormat>
+<protocol>http</protocol>
+<!-- title of the document -->
+<documentTitle>Extent</documentTitle>
+<!-- report name - displayed at top-nav -->
 
-        <!-- custom javascript -->
-        <scripts>
-            <![CDATA[
-                $(document).ready(function() {
+<reportName>Cucumber Report</reportName>
+<!-- location of charts in the test view -->
 
-                });
-            ]]>
-        </scripts>
+<!-- top, bottom -->
 
-        <!-- custom styles -->
-        <styles>
-            <![CDATA[
+<testViewChartLocation>bottom</testViewChartLocation>
+<!-- custom javascript -->
 
-            ]]>
-        </styles>
-    </configuration>
+<scripts>
+
+<![CDATA[
+$(document).ready(function() {
+});
+]]>
+</scripts>
+<!-- custom styles -->
+<styles>
+<![CDATA[
+]]>
+</styles>
+</configuration>
 </extentreports>

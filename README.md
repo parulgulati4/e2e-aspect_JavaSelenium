@@ -4,7 +4,11 @@ E2E Aspect java selenium project
 Framework - BBD CUCUMBER
 
 This is a sample project to demonstrate what is page object model framework and how it can used in selenium to automate any application. Cucumber is used as test framework.
+#Automation base
+Automation Testing Using Selenium, BDD and Allure reports
 
+Automation base is a behavior driven development (BDD) approach to write automation test script to test Web.
+The framework supports reporting with Allure reports
 #Installation and commands
 #Pre-requisites for Setup Configuration
 The following components are required to get started with automation:
@@ -23,6 +27,15 @@ We can Run from TestRunner class
 We can Run from Maven -- using mvn clean(open project repo open cmd give mvn clean)
 We can run project from CI CD pipe line using jenkins or bombo
 
+
+#Documentation
+Installation
+Run tests
+Pass external parameters to test
+Use allure reports
+Use predefined steps
+Webdriver types support
+Mobile emulation
 
 
 #Dependency Java maven
