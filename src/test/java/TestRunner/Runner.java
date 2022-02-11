@@ -20,13 +20,17 @@ import Utilities.JVMReport;
 @CucumberOptions(
 		 monochrome=true,
 				
-		features = "src\\main\\resources\\Features",
-		
+		//features ={ "src\\test\\resources\\Features"},
+		features = { "classpath:Features" },
 
-	plugin={"pretty","json:src\\test\\resources\\Reports\\cucumber.json"},
+//	plugin={"pretty","json:src\\test\\resources\\Reports\\cucumber.json"},
 		
-		
-				
+				plugin = { "pretty", "html:target/site/cucumber-pretty","json:target/cucumber.json", "rerun:target/rerun.txt" },
+
+					//	glue = {"src\\main\\java\\glue"},
+
+		glue = { "classpath:BBDFramework.glue"},
+
 		snippets=SnippetType.CAMELCASE,
 		strict=true,
 			

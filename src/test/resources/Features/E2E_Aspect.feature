@@ -72,12 +72,40 @@ Feature: Login Page
     Then Navigate to  Browser page and select contacts
     Then verify all the fields avaliable in contacts page
     Then Close the browser
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+  @TC9
+  Scenario: Verify Browser  Page and select sites check all the fields
+    Given User should Open chrome brower
+    When User will Open Application URL
+    Then User will Enter UserName and Password  and click on login button
+    Then Navigate to  Browser page and select sites
+    Then verify all the fields avaliable in sites page
+    Then Close the browser
+
+  @TC10
+  Scenario: Verify Browser  Page and select supply check all the fields
+    Given User should Open chrome brower
+    When User will Open Application URL
+    Then User will Enter UserName and Password  and click on login button
+    Then Navigate to  Browser page and select supply
+    Then verify all the fields avaliable in supply page
+    Then Close the browser
+
+  
+  @TC11
+  Scenario: Verify Browser  Page and select Routers check all the fields
+    Given User should Open chrome brower
+    When User will Open Application URL
+    Then User will Enter UserName and Password  and click on login button
+    Then Navigate to  Browser page and select Routers
+    Then verify all the fields avaliable in supply Routers
+    Then Close the browser
+
+  @TC12
+  Scenario: Verify Browser  Page and select Reporters check all the fields
+    Given User should Open chrome brower
+    When User will Open Application URL
+    Then User will Enter UserName and Password  and click on login button
+    Then Navigate to  Browser page and select Reporters
+    Then verify all the fields avaliable in supply Reporters
+    Then Close the browser

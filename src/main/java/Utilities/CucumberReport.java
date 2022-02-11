@@ -26,7 +26,7 @@ public class CucumberReport {
 		List<String> jsonFiles = new ArrayList<String>();
 		jsonFiles.add(TargetFolder+"/cucumber.json"); 
 		String buildNumber = "1";
-		String projectName = "ECD";
+		String projectName = "E2E Aspect Test Automation";
 		boolean runWithJenkins = false;
 		boolean parallelTesting = false;
 		Configuration configuration = new Configuration(reportOutputDirectory,projectName);

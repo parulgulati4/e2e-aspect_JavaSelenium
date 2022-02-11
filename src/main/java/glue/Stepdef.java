@@ -1,4 +1,4 @@
-package com.stepdefinitions;
+package glue;
 
 import java.util.List;
 import java.util.concurrent.TimeUnit;
@@ -8,21 +8,19 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.remote.DesiredCapabilities;
 
-import Base.BaseClass;
-import Utilities.ReadConfig;
-import cucumber.api.PendingException;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import junit.framework.Assert;
 
-public class glue  {
-
+public class Stepdef {
+	
+	
+	
 	public static WebDriver  driver;
-	public  ReadConfig ReadConfig = new ReadConfig();
+	public  Utilities.ReadConfig ReadConfig = new Utilities.ReadConfig();
 
 	
 	@Given("^User should Open chrome brower$")
@@ -33,6 +31,7 @@ public class glue  {
 		
 		ChromeOptions options = new ChromeOptions();
 		options.setHeadless(true);	
+		
 		 driver = new ChromeDriver(options);
 	}
 	
@@ -88,7 +87,7 @@ public class glue  {
 	    // Write code here that turns the phrase above into concrete actions
 		
 	
-	    throw new PendingException();
+		
 	}
 
 	@Then("^verify widgets on Home page$")
@@ -295,7 +294,141 @@ public class glue  {
 			Assert.assertTrue(true);
 		}
 	}
+	
+	
+	@Then("^Navigate to  Browser page and select sites$")
+	public void navigateToBrowserPageAndSelectsites() throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+		
+		 driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+	
+		driver.findElement(By.xpath("//abbr[text()='Sites']")).click();
+		
+		driver.findElement(By.xpath("//div[@class='jss163 MuiSelect-select MuiSelect-standard MuiInput-input MuiInputBase-input css-1fi5yo0-MuiSelect-select-MuiInputBase-input-MuiInput-input']")).click();
+		
+		driver.findElement(By.xpath("//li[text()='Contacts']")).click();
+		
+		
+		
+		
+	}
 
+	@Then("^verify all the fields avaliable in sites page$")
+	public void verifyAllTheFieldsAvaliableInsitesPage() throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+		
+		 driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+	    
+		List<WebElement> allfields = driver.findElements(By.xpath("//span[@class='MuiButtonBase-root MuiTableSortLabel-root css-1qgma8u-MuiButtonBase-root-MuiTableSortLabel-root']"));
+		
+		for (WebElement webElement : allfields) {
+			
+			String text = webElement.getText();
+			System.out.println(text);
+			Assert.assertTrue(true);
+		}
+	}
+	
+	@Then("^Navigate to  Browser page and select Supply$")
+	public void navigateToBrowserPageAndSelectSupply() throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+		
+		 driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+	
+		driver.findElement(By.xpath("//abbr[text()='Supply']")).click();
+		
+		driver.findElement(By.xpath("//div[@class='jss163 MuiSelect-select MuiSelect-standard MuiInput-input MuiInputBase-input css-1fi5yo0-MuiSelect-select-MuiInputBase-input-MuiInput-input']")).click();
+		
+		driver.findElement(By.xpath("//li[text()='Contacts']")).click();
+		
+		
+		
+		
+	}
+
+	@Then("^verify all the fields avaliable in sites Supply$")
+	public void verifyAllTheFieldsAvaliableInSupplyPage() throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+		
+		 driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+	    
+		List<WebElement> allfields = driver.findElements(By.xpath("//span[@class='MuiButtonBase-root MuiTableSortLabel-root css-1qgma8u-MuiButtonBase-root-MuiTableSortLabel-root']"));
+		
+		for (WebElement webElement : allfields) {
+			
+			String text = webElement.getText();
+			System.out.println(text);
+			Assert.assertTrue(true);
+		}
+	}
 
 	
+	
+	@Then("^Navigate to  Browser page and select Routers$")
+	public void navigateToBrowserPageAndSelectRouters() throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+		
+		 driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+	
+		driver.findElement(By.xpath("//abbr[text()='Routers']")).click();
+		
+		driver.findElement(By.xpath("//div[@class='jss163 MuiSelect-select MuiSelect-standard MuiInput-input MuiInputBase-input css-1fi5yo0-MuiSelect-select-MuiInputBase-input-MuiInput-input']")).click();
+		
+		driver.findElement(By.xpath("//li[text()='Contacts']")).click();
+		
+		
+		
+		
+	}
+
+	@Then("^verify all the fields avaliable in sites Routers$")
+	public void verifyAllTheFieldsAvaliableInRoutersPage() throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+		
+		 driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+	    
+		List<WebElement> allfields = driver.findElements(By.xpath("//span[@class='MuiButtonBase-root MuiTableSortLabel-root css-1qgma8u-MuiButtonBase-root-MuiTableSortLabel-root']"));
+		
+		for (WebElement webElement : allfields) {
+			
+			String text = webElement.getText();
+			System.out.println(text);
+			Assert.assertTrue(true);
+		}
+	}
+	
+	@Then("^Navigate to  Browser page and select Reporters$")
+	public void navigateToBrowserPageAndSelectReporters() throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+		
+		 driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+	
+		driver.findElement(By.xpath("//abbr[text()='Reporterss']")).click();
+		
+		driver.findElement(By.xpath("//div[@class='jss163 MuiSelect-select MuiSelect-standard MuiInput-input MuiInputBase-input css-1fi5yo0-MuiSelect-select-MuiInputBase-input-MuiInput-input']")).click();
+		
+		driver.findElement(By.xpath("//li[text()='Contacts']")).click();
+		
+		
+		
+		
+	}
+
+	@Then("^verify all the fields avaliable in Reporters Routers$")
+	public void verifyAllTheFieldsAvaliableInReportersPage() throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+		
+		 driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+	    
+		List<WebElement> allfields = driver.findElements(By.xpath("//span[@class='MuiButtonBase-root MuiTableSortLabel-root css-1qgma8u-MuiButtonBase-root-MuiTableSortLabel-root']"));
+		
+		for (WebElement webElement : allfields) {
+			
+			String text = webElement.getText();
+			System.out.println(text);
+			Assert.assertTrue(true);
+		}
+	}
+
+
 }
